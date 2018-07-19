@@ -1,13 +1,13 @@
 # jackpair
 
-*Open source variant of JackPair on Nucleo STM32F446RE demo board
+*Open source variant of JackPair on Nucleo STM32F446RE demo board*
 
 This is an attempt to implement an open source JackPair. It has nothing to do with the original JackPair project. We can not even compare the functionality since we do not have the original JackPair or other similar devices. This project is for education purposes only: some licensed codes are inside (see cover in each file).
 In fact this device is similar to that developed in the Marfin laboratory (Moscow, USSR) on the orders of Stalin in early 50's (see Solzhenitsyn's novel "The First Circle").
 
 Our device allows you to point-to-point encrypt speech using an analog audio interface. It is in the form of a hardware headset connected to a VHF radio or mobile phone using Bluetooth or audio connectors. Both full duplex and simplex (PTT mode) is supported. 12-bit daily code is set using switches to protect from unauthorized access (in old military style). The principle of the device is to convert speech into a low bitrate data stream by a speech codec, provide encryption and then modulation into a pseudo-speech signal by a special modem.
 
-% Functional description of modules:
+#Functional description of modules:#
 1. Audio codec: the MELPE-1200 algorithm with NPP-7 noise suppressor is used. The original codec works with 67.5 ms frames containing 540 8KHz PCM samples, compressing them  to 81 bits of data. To achieve the required bitrate 800 bps, we eliminated sync bit and 8 bits of Fourier magnitudes, which did not significantly affect the quality of speech. In addition, we reduced PCM sampling rate to 6KHz, which is also acceptable for most speakers (possibly, except very high female and child voices). Thus, the voice codec used in the project provides a bitrate of 800 bps, works with 90 ms frames containing 540 6KHz PCM samples, compressing them to 72 bits of data.  The quality of speech practically not differs from the original MELPE-1200 algorithm.
 2. Encrypting is in stream mode with no error spreading.  Keccak-800 Sponge permutation is used as a XOF like Shake-128  that absorbs the session key, one-way counter and squeezes gamma XOR with speech data frame. Synchronization of counters is provided in speech pauses. 
 128-bits Encryption and decryption keys are output at the beginning of the session by the authenticated protocol SPEKE based on Diffie-Hellmann with base point derived from authenticator. This protocol provides zero knowledge and it is resistant to offline attacks, which allows you to use a short pre-shared secret as a 12-bit daily code.
