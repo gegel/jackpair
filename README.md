@@ -53,7 +53,7 @@ In talk mode the BER is not outputs.
 Adds TX flag (X - clear mode, C-silency: control data will be sent, V - voice sent) 
 and RX flag (X - no lock of carrier, clear mode, C-silency: control data were receved, V-voice received). 
 
-For check channel quality run TX device for discontinuos transmitting a key data  and RX device for receiving. Red LED on receiver board will be first blink then light (key was received) and next frames will be compared with key data for estimate BER. 
+For check channel quality run one device for discontinuos transmitting a key data  and other device for receiving. Red LED on receiver board will be first blink then light (key was received) and next frames will be compared with key data for estimate BER. 
 
 http://torfone.org/jackpair
 MailTo: torfone@ukr.net
