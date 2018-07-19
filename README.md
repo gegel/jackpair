@@ -3,7 +3,7 @@
 *Open source variant of JackPair on Nucleo STM32F446RE demo board*
 
 This is an attempt to implement an open source JackPair. It has nothing to do with the original JackPair project. We can not even compare the functionality since we do not have the original JackPair or other similar devices. This project is for education purposes only: some licensed codes are inside (see cover in each file).
-In fact this device is similar to that developed in the Marfin laboratory (Moscow, USSR) on the orders of Stalin in early 50's (see Solzhenitsyn's novel "The First Circle").
+In fact this device is similar to that developed in the laboratory in Marfino (Moscow, USSR) on the orders of Stalin in early 50's (see Solzhenitsyn's novel "The First Circle").
 
 Our device allows you to point-to-point encrypt speech using an analog audio interface. It is in the form of a hardware headset connected to a VHF radio or mobile phone using Bluetooth or audio connectors. Both full duplex and simplex (PTT mode) is supported. 12-bit daily code is set using switches to protect from unauthorized access (in old military style). The principle of the device is to convert speech into a low bitrate data stream by a speech codec, provide encryption and then modulate into a pseudo-speech signal by a special modem.
 
