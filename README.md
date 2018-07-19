@@ -42,12 +42,12 @@ Thus, the PTT mode allows communication in an open (insecure) mode with a higher
 *Statistics output* is available via the virtual COM port created by the STM32 Nucleo board. You will need STM32 Virtual COM Port Driver.
 You can use Putty terminal tool (on Serial mode with 115200 baudrate).
 On key exchange the extended statistics are outputted:
-D - sequentional number of last received data packet;
-P - packets errors rate (percent and absolute);
-S - internal parity errors rate (percent and absolute);
-B - bits errors rate comparing received control data with expected (percent and absolute);
-L - PCM stream lag in samples (0-719), will be stable while carrier locked
-C - carrier locked (0/1), channel polarity (0/1) and sampling rate tuning value (+-8)
+* D - sequentional number of last received data packet;
+* P - packets errors rate (percent and absolute);
+* S - internal parity errors rate (percent and absolute);
+* B - bits errors rate comparing received control data with expected (percent and absolute);
+* L - PCM stream lag in samples (0-719), will be stable while carrier locked
+* C - carrier locked (0/1), channel polarity (0/1) and sampling rate tuning value (+-8)
 
 In talk mode the BER is not outputs.  
 Adds TX flag (X - clear mode, C-silency: control data will be sent, V - voice sent) 
