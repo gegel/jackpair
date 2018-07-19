@@ -38,3 +38,7 @@ Unfortunately many modern smartphones have in-build noise suppressor significant
 The first both parties establishe call using JackPair as a clear headset.  After this, in PTT mode one of participants press button and wait 5 sec for sending key. Other participant check if key was completely received (red LED will be lights, not blink). If key not received, the first step will repeat.  After key was received the second side press button and send their key during few sec. After both parties have keys each can press button and speak after 1 sec needs for guarantee sync of receiver. 
 Thus, the PTT mode allows communication in an open (insecure) mode with a higher speech quality, using the headset button for short-term switch to a secure mode for transferring sensitive part of speech. Talking side can control TX indicator is light in secure mode.  Receiver switches from insecure to secure mode automatically and RX indicator is light in secure mode.
 
+http://torfone.org/jackpair
+MailTo: torfone@ukr.net
+Van Gegel, 2018
+
