@@ -34,7 +34,7 @@ For PTT the on-board blue button is used. PTT or duplex mode can be selected by 
 "One days code" set by jumpers can be placed on 8+8 pins area in parallel or perpendicular. The resulting code size will be near 12 bits with all possible combinations.
 We use two 3V tolerant LED indicators placed directly on on-board female connector. One is RX (red): blinks on locked carrier before key agreed and lights if we already have their key. Other is TX (yellow): blinks before key agreed and lights on key agreed complete and we can speak for other side.  In PTT mode this indicator blinks on button press on key agreed stage and lights on button press after one.
 
-% Usage:
+** Usage:
 Unfortunately many modern smartphones have in-build noise suppressor significantly reject modem base-band signal. So this feature must be disabled on engineering menu or with special audio configuration tool.
 The first both parties establishe call using JackPair as a clear headset.  After this, in PTT mode one of participants press button and wait 5 sec for sending key. Other participant check if key was completely received (red LED will be lights, not blink). If key not received, the first step will repeat.  After key was received the second side press button and send their key during few sec. After both parties have keys each can press button and speak after 1 sec needs for guarantee sync of receiver. 
 Thus, the PTT mode allows communication in an open (insecure) mode with a higher speech quality, using the headset button for short-term switch to a secure mode for transferring sensitive part of speech. Talking side can control TX indicator is light in secure mode.  Receiver switches from insecure to secure mode automatically and RX indicator is light in secure mode.
