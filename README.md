@@ -1,4 +1,4 @@
-# jackpair
+# JackPair
 
 *Open source variant of JackPair on Nucleo STM32F446RE demo board*
 
