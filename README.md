@@ -1,4 +1,4 @@
-# JackPair p2p speech encrypting device
+# JackPair: p2p speech encrypting device
 
 *Open source variant of JackPair on Nucleo STM32F446RE demo board*
 
