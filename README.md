@@ -1,6 +1,6 @@
 # jackpair
 
-Open source variant of JackPair on Nucleo STM32F446RE demo board
+*Open source variant of JackPair on Nucleo STM32F446RE demo board*
 
 This is an attempt to implement an open source JackPair. It has nothing to do with the original JackPair project. We can not even compare the functionality since we do not have the original JackPair or other similar devices. This project is for education purposes only: some licensed codes are inside (see cover in each file).
 In fact this device is similar to that developed in the Marfin laboratory (Moscow, USSR) on the orders of Stalin in early 50's (see Solzhenitsyn's novel "The First Circle").
